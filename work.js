@@ -198,7 +198,7 @@ function explode_path(path, costs){
 			var step_cost_enchants = calc_item_cost(b_item, costs);
 			var step_cost_penalties = work_penalty[work_a] + work_penalty[work_b];
 
-			new_path.cost = level_cost[path.cost + step_cost_enchants + step_cost_penalties];
+			new_path.cost = path.cost + level_cost[step_cost_enchants + step_cost_penalties];
 
 			tries++;
 
